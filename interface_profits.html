@@ -1,0 +1,52 @@
+<html>
+    <style type="text/css">
+        label,input {
+            position:relative;
+            left: 20%;
+        }
+        legend {
+            position: relative;
+            left: 37%;
+            text-transform: uppercase;
+        }
+        .sub {
+            position: relative;
+            left: 41%;
+        }
+        legend {
+            font-family: roboto;
+            font-size: 2em;
+            
+        }
+        .lab {
+            font-family: forte;
+            font-size: 20px;
+            font-weight: lighter;
+        }
+        fieldset {
+            background-color: cornflowerblue;
+        }
+    </style>
+    <body>
+        <form action="profits_db.php" method="post">
+        <fieldset>
+            <legend><b>Profit Details</b></legend>
+            <label class="lab">Stock: <br />
+            <input type="text" name="stock" />
+            </label>
+            <br>
+            <label class="lab">Margin: <br>
+            <input type="text" name="margin" />
+            </label>
+            <br>
+            <label class="lab">Profit: <br>
+            <input type="text" name="profit" />
+            </label>
+            <br>
+ 	    <br><br><br>
+            <input class="sub" type="submit" name="submit" value="Insert Record">
+            <button class="sub"><a href="view_profits_db.php">View all profits</a></button>
+        </fieldset>
+        </form>
+    </body>
+</html>

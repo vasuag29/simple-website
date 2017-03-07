@@ -1,0 +1,69 @@
+<html>
+    <style type="text/css">
+        label,input {
+            position:relative;
+            left: 20%;
+        }
+        legend {
+            position: relative;
+            left: 37%;
+            text-transform: uppercase;
+        }
+        .sub,.sel {
+            position: relative;
+            left: 41%;
+        }
+        legend {
+            font-family: roboto;
+            font-size: 2em;
+            
+        }
+        .lab {
+            font-family: forte;
+            font-size: 20px;
+            font-weight: lighter;
+        }
+        fieldset {
+            background-color: dimgrey;
+        }
+    </style>
+    <body>
+        <form action="employee_db.php" method="post">
+        <fieldset>
+            <legend><b>Enter Employee Details</b></legend>
+            <label class="lab">Employee ID: <br />
+            <input type="text" name="eid" />
+            </label>
+            <br>
+            <label class="lab">Name: <br>
+            <input type="text" name="ename" />
+            </label>
+            <br>
+            <label class="lab">Age: <br>
+            <input type="text" name="eage" />
+            </label>
+            <br>
+	    <label class="lab">Sex: <br>
+            <input type="text" name="esex" />
+            </label>
+            <br>
+	    <label class="lab">Salary: <br>
+            <input type="text" name="esalary" />
+            </label>
+            <br>
+	    <label class="lab">Address: <br>
+            <input type="text" name="eaddr" />
+            </label>
+            <br>
+	    <label class="lab">Designation: <br>
+            <input type="text" name="edesig" />
+            </label>
+            <br>
+            <br><br>
+            <input class="sub" type="submit" name="submit" value="Insert Record">
+            <br>
+            <button class="sub"><a href="view_employee_db.php">View all employee details</a></button>
+        </fieldset>
+        </form>
+    </body>
+</html>

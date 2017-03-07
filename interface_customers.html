@@ -1,0 +1,52 @@
+<html>
+    <style type="text/css">
+        label,input {
+            position:relative;
+            left: 20%;
+        }
+        legend {
+            position: relative;
+            left: 37%;
+            text-transform: uppercase;
+        }
+        .sub {
+            position: relative;
+            left: 41%;
+        }
+        legend {
+            font-family: roboto;
+            font-size: 2em;
+            
+        }
+        .lab {
+            font-family: forte;
+            font-size: 20px;
+            font-weight: lighter;
+        }
+        fieldset {
+            background-color: darksalmon;
+        }
+    </style>
+    <body>
+        <form action="customers_db.php" method="post">
+        <fieldset>
+            <legend><b>Enter Customer details</b></legend>
+            <label class="lab">Customer ID: <br />
+            <input type="text" name="cid" />
+            </label>
+            <br>
+            <label class="lab">Customer Name:<br>
+            <input type="text" name="cname" />
+            </label>
+            <br>
+            <label class="lab">Customer Address:<br>
+            <input type="text" name="caddr" />
+            </label>
+            <br>            
+            <br><br><br>
+            <input class="sub" type="submit" name="submit" value="Insert Record">
+            <button class="sub"><a href="view_customers_db.php">View all customers</a></button>
+        </fieldset>
+        </form>
+    </body>
+</html>

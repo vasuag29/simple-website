@@ -1,0 +1,49 @@
+<html>
+    <style type="text/css">
+        label,input {
+            position:relative;
+            left: 20%;
+        }
+        legend {
+            position: relative;
+            left: 37%;
+            text-transform: uppercase;
+        }
+        .sub,.sel {
+            position: relative;
+            left: 41%;
+        }
+        legend {
+            font-family: roboto;
+            font-size: 2em;
+            
+        }
+        .lab {
+            font-family: forte;
+            font-size: 20px;
+            font-weight: lighter;
+        }
+        fieldset {
+            background-color: dimgrey;
+        }
+    </style>
+    <body>
+        <form action="imp_dates_db.php" method="post">
+        <fieldset>
+            <legend><b>Details of important dates</b></legend>
+            <label class="lab">Date: <br />
+            <input type="text" name="impdate" />
+            </label>
+            <br>
+            <label class="lab">Event: <br>
+            <input type="text" name="impevent" />
+            </label>
+            <br>
+            <br><br>
+            <input class="sub" type="submit" name="submit" value="Insert Record">
+            <br>
+            <button class="sub"><a href="view_imp_dates_db.php">View all important dates</a></button>
+        </fieldset>
+        </form>
+    </body>
+</html>
